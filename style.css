@@ -1,4 +1,22 @@
+.icon-main,
 .icon {
   width: 50px;
   height: 50px;
+}
+
+.profile-pic-random img,
+#profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#profile-pic-larger {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
