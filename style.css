@@ -103,12 +103,8 @@ body {
   grid-row: 1 / 2;
   display: grid;
   grid-template-rows: auto 1fr;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.content-container {
-  grid-column: 2 / 6;
-  grid-row: 2 / 3;
+  box-shadow: 0 8px 6px -6px rgba(32, 32, 32, 0.342);
+  z-index: 1; /* to make box shadow not be hidden */
 }
 
 .header-upper,
@@ -193,4 +189,70 @@ body {
   padding: 30px;
   padding-top: 0px;
   padding-bottom: 10px;
+}
+
+/* mostly header above */
+
+.announcements-title,
+.projects-title {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.projects-title {
+  padding-left: 10px;
+}
+
+.content-container {
+  background-color: rgb(226, 232, 240);
+  grid-column: 2 / 6;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+}
+
+.card-container {
+  grid-row: 2 / 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 30vh); /* difficult to find right size */
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+
+  border-left: 8px solid #f0b42a;
+  min-width: 100px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin-top: 0px;
+  font-size: 14px;
+  height: 100px;
+  overflow: auto;
+}
+
+.trending-container {
+  grid-column: 2;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding-top: 4px;
 }
