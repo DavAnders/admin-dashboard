@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf") format("trueType");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -6,7 +20,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-template-rows: auto auto;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
 }
 
@@ -137,19 +151,6 @@ body {
 .header-upper {
   justify-content: space-between;
   padding: 30px;
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding-bottom: 20px;
-}
-
-.profile a {
-  text-decoration: none;
-  color: black;
-  font-weight: bolder;
 }
 
 .hello {
@@ -291,6 +292,7 @@ body {
   background-color: white;
   padding: 20px;
   border-radius: 12px;
+  margin-right: 20px;
 }
 
 .trending-container {
@@ -307,4 +309,33 @@ body {
 .announcement .icon:hover {
   filter: brightness(0) saturate(100%) invert(35%) sepia(40%) saturate(432%)
     hue-rotate(154deg) brightness(98%) contrast(93%);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.profile a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-text p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profile-pic-random img {
+  width: 75px;
+  height: 75px;
 }
